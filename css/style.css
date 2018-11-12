@@ -1,64 +1,64 @@
-/* начало css */
-/* Здесь базовые стили для старых браузеров. */
+/* РЅР°С‡Р°Р»Рѕ css */
+/* Р—РґРµСЃСЊ Р±Р°Р·РѕРІС‹Рµ СЃС‚РёР»Рё РґР»В¤ СЃС‚Р°СЂС‹С… Р±СЂР°СѓР·РµСЂРѕРІ. */
 
 * {
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body { 
+body {
   font: 13px Calibri, Arial;
 }
 div {
   /* background: #000; */
-  padding: 3px; 
-  position: fixed; 
-  bottom: 0; 
-  width: 100%; 
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-div input { 
-  border: 0; 
-  padding: 10px; 
-  width: 90%; 
-  margin-right: .5%; 
+div input {
+  border: 0;
+  padding: 10px;
+  width: 90%;
+  margin-right: .5%;
 }
-div button { 
-  width: 9%; 
-  background: rgb(130, 224, 255); 
-  border: none; 
-  padding: 10px; 
+div button {
+  width: 9%;
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px;
 }
-#messages { 
-  list-style-type: none; 
-  margin: 0; 
-  padding: 0; 
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-#messages li { 
-  padding: 5px 10px; 
+#messages li {
+  padding: 5px 10px;
 }
-#messages li:nth-child(odd) { 
-  background: #eee; 
+#messages li:nth-child(odd) {
+  background: #eee;
 }
- 
+
 @media only screen and (min-width: 480px) {
-/* Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. */
- 
+/* Р—РґРµСЃСЊ СЃС‚РёР»Рё Р±РѕР»РµРµ СЂР°Р·СѓРјРЅС‹С…, РЅРѕ РІСЃРµ РµС‰Рµ РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ. Android, iPhone  Рё С‚Р°Рє РґР°Р»РµРµ. */
+
 }
- 
+
 @media only screen and (min-width: 768px) {
-/* Планшеты в режиме portrait. */
- 
+/* РџР»Р°РЅС€РµС‚С‹ РІ СЂРµР¶РёРјРµ portrait. */
+
 }
- 
+
 @media only screen and (min-width: 992px) {
-/* Планшеты в режиме landscape, нетбуки, ноутбуки, десктоп. */
- 
+/* РџР»Р°РЅС€РµС‚С‹ РІ СЂРµР¶РёРјРµ landscape, РЅРµС‚Р±СѓРєРё, РЅРѕСѓС‚Р±СѓРєРё, РґРµСЃРєС‚РѕРї. */
+
 }
- 
+
 @media only screen and (min-width: 1382px) {
-/* Десктоп с большими разрешениями, телевизоры. */
- 
+/* Р”РµСЃРєС‚РѕРї СЃ Р±РѕР»СЊС€РёРјРё СЂР°Р·СЂРµС€РµРЅРёВ¤РјРё, С‚РµР»РµРІРёР·РѕСЂС‹. */
+
 }
- 
- 
-/* конец css */
+
+
+/* РљРѕРЅРµС† css */
