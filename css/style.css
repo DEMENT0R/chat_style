@@ -15,11 +15,12 @@ div {
   background: #aaa;
   padding: 1vw;
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  bottom: 0vw;
+  left: 0vw;
+  width: 100vw;
 }
 div input {
-  border: 0;
+  border: none;
   padding: 1vw;
   width: 77%;
   margin-right: .5%;
@@ -30,6 +31,7 @@ div button {
   padding: 1vw;
   background: #08f;
   color: #fff;
+  float: right;
 }
 .test-block {
   display: none;
@@ -86,11 +88,10 @@ div button {
     width: 60vw;
   }
   div input {
-    border: none;
-    border-bottom: 1px solid;
     padding: 1vw;
     width: 77%;
     margin-right: .5%;
+    border-bottom: 1px solid;
   }
   div button {
     color: #444;
