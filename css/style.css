@@ -5,14 +5,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box;*/
   font: 7vw Calibri, Arial;
 }
 body {
   padding: 1vw;
 }
 div {
-  background: #aaa;
+  background: #eee;
   padding: 1vw;
   position: fixed;
   bottom: 0vw;
@@ -26,12 +26,14 @@ div input {
   margin-right: .5%;
 }
 div button {
-  width: 19%;
+  /*
   border: none;
-  padding: 1vw;
   background: #08f;
   color: #fff;
+  */
   float: right;
+  width: 19%;
+  padding: 1vw;
 }
 .test-block {
   display: none;
@@ -53,9 +55,6 @@ div button {
   * {
     font: 6vw Calibri, Arial;
   }
-  div button {
-    color: #aaa;
-  }
   #w480 {
     display: block;
   }
@@ -65,9 +64,6 @@ div button {
   /* Планшеты в режиме portrait. */
   * {
     font: 5vw Calibri, Arial;
-  }
-  div button {
-    color: #777;
   }
   #w768 {
     display: block;
@@ -93,9 +89,6 @@ div button {
     margin-right: .5%;
     border-bottom: 1px solid;
   }
-  div button {
-    color: #444;
-  }
   #w992 {
     display: block;
   }
@@ -105,9 +98,6 @@ div button {
   /* Десктоп с большими разрешениями, телевизоры. */
   * {
     font: 1vw Calibri, Arial;
-  }
-  div button {
-    color: #111;
   }
   #w1382 {
     display: block;
