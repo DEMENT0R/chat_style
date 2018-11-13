@@ -72,7 +72,22 @@ div button {
 @media only screen and (min-width: 992px) {
   /* Планшеты в режиме landscape, нетбуки, ноутбуки, десктоп. */
   * {
-    font: 3vw Calibri, Arial;
+    font: 2vw Calibri, Arial;
+  }
+  div {
+    background: none;
+    padding: 1vw;
+    position: fixed;
+    bottom: 3vw;
+    left: 20vw;
+    width: 60vw;
+  }
+  div input {
+    border: none;
+    border-bottom: 1px solid;
+    padding: 1vw;
+    width: 77%;
+    margin-right: .5%;
   }
   div button {
     color: #444;
@@ -85,7 +100,7 @@ div button {
 @media only screen and (min-width: 1382px) {
   /* Десктоп с большими разрешениями, телевизоры. */
   * {
-    font: 2vw Calibri, Arial;
+    font: 1vw Calibri, Arial;
   }
   div button {
     color: #111;
