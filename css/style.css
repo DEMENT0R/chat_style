@@ -1,12 +1,15 @@
 /* начало css */
 
-/* Здесь базовые стили дл¤ старых браузеров. */
+/* Здесь базовые стили для старых браузеров. */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font: 6vw Calibri, Arial;
+}
+body {
+  padding: 1vw;
 }
 div {
   background: #aaa;
