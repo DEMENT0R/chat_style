@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 6vw Calibri, Arial;
+  font: 7vw Calibri, Arial;
 }
 body {
   padding: 1vw;
@@ -51,7 +51,7 @@ div button {
 @media only screen and (min-width: 480px) {
   /* Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. */
   * {
-    font: 5vw Calibri, Arial;
+    font: 6vw Calibri, Arial;
   }
   div button {
     color: #aaa;
@@ -64,7 +64,7 @@ div button {
 @media only screen and (min-width: 768px) {
   /* Планшеты в режиме portrait. */
   * {
-    font: 4vw Calibri, Arial;
+    font: 5vw Calibri, Arial;
   }
   div button {
     color: #777;
