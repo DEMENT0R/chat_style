@@ -20,8 +20,10 @@
           <a class="dropdown-item" href="partials/crud.php?id=0">Добавить пользователя</a>
           <a class="dropdown-item" href="partials/app.php?get_message=20">Последние сообщения</a>
           <hr>
-          <a class="dropdown-item" href="?debug=1">Режим отладки</a>
-          <a class="dropdown-item" href="?debug=0">Обычный режим</a>
+          <a class="dropdown-item" href="?admin=1&debug=1">Режим отладки</a>
+          <a class="dropdown-item" href="?admin=1&debug=0">Обычный режим</a>
+          <hr>
+          <a class="dropdown-item" href="./">Логаут</a>
         </div>
       </li>
       <li class="nav-item">

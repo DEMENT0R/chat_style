@@ -1,4 +1,5 @@
-<div class="main-window container">
+<div class="container">
+  <div class="container position-fixed text-right"><a class="nav-link" href="#" data-toggle="modal" data-target="#helpModal">Как общаться с ботом?</a></div>
   <div class="container text-center">
     <h1 class="">TOMORU</h1>
     <h4 class="">Умный бот, который может звонить, вести переписку, обучать и продавать</h4>

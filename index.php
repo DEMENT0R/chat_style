@@ -9,15 +9,23 @@ $_start_time = microtime(true);
 </head>
 <body>
   <!-- Nav -->
-  <?php include 'partials/navigation.php'; ?>
-  <!-- Debug -->
   <?php
-  if ($_GET['debug'] === 1) {
-    include 'partials/screens/debug.php';
+  if ($_GET['admin'] == 1) {
+    include 'partials/navigation.php';
   } else {
-    include 'partials/screens/default.php';
+    //
   }
   ?>
+  <div class="main-window">
+    <!-- Debug -->
+    <?php
+    if ($_GET['debug'] == 1) {
+      include 'partials/screens/debug.php';
+    } else {
+      include 'partials/screens/default.php';
+    }
+    ?>
+  </div>
   <!-- Input block -->
   <?php include 'partials/input-block.php'; ?>
   <!-- Modals start -->

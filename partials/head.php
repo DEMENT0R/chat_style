@@ -1,4 +1,4 @@
-<title>Chat</title>
+<title>TOMORU — Умный бот, который может звонить, вести переписку, обучать и продавать.</title>
 <meta charset="utf-8">
 <!-- Main Style -->
 <link rel="stylesheet" href="css/style.css">
