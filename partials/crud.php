@@ -1,9 +1,9 @@
-<?php 
+<?php
     //PHP counter starts:
-    $_start_time = microtime(true); 
+    $_start_time = microtime(true);
 ?>
 <?php
-include 'classes/safemysql.class.php';
+include '../classes/safemysql.class.php';
 
 $db     = new SafeMysql();
 $table  = "users";
