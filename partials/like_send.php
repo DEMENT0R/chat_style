@@ -3,7 +3,7 @@
 sleep(1);
 
 //SafeMysql
-include 'classes/safemysql.class.php';
+include '../classes/safemysql.class.php';
 $db     = new SafeMysql();
 $table  = "chats";
 $fields = ['id', 'ssid', 'name', 'text', 'updated'];

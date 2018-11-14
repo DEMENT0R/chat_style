@@ -1,15 +1,18 @@
 $script_update_time = 1000;
+$script_update_needed = false;
 
 //first messages loading
-UpdateMessages();
+//UpdateMessages();
 //autoupdate
 setInterval(function(){
-  UpdateMessages();
+  if ($script_update_needed) {
+    UpdateMessages();
+  }
 }, $script_update_time);
 
 //отправка сообщения
 //при нажатии кнопки
-$('#send-message').click(function(){
+$('#message-send').click(function(){
   sendMessage();
 
   $('#message-input').val('');
@@ -27,7 +30,7 @@ $("#message-input").keyup(function(event){
 
 //update function
 function UpdateMessages(){
-  $('#chat-history').load('app.php?get_message=3');
+  $('#main-window').load('partials/app.php?get_message=3');
   //$.post("stupid_bot.php");
 }
 
@@ -43,9 +46,9 @@ function get_cookie ( cookie_name )
   var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
 
   if ( results )
-    return ( unescape ( results[2] ) );
+  return ( unescape ( results[2] ) );
   else
-    return null;
+  return null;
 }
 
 //send message
@@ -55,14 +58,14 @@ function sendMessage(){
     //default sending//
     ///////////////////
     $.post(
-      "app.php",
+      "partials/app.php",
       {
         send_message: "1",
         id: 0,
         ssid: get_cookie ( "ssid" ),
         name: get_cookie ( "user_name" ),
         text: $('#message-input').val()
-    },
+      },
       //debug
       //onAjaxSuccess
     );
@@ -70,16 +73,17 @@ function sendMessage(){
     //sending to NEUROBOT!!!//
     //////////////////////////
     $.post(
-      "like_send.php",
+      "partials/like_send.php",
       {
         ssid: get_cookie ( "ssid" ),
         text: $('#message-input').val()
-    },
+      },
       //debug
       //onAjaxSuccess
     );
 
     $('#message-input').val('');
+    $script_update_needed = true;
   } else {
     $('#message-input').attr("placeholder", "Введите сообщение для бота!");
   }

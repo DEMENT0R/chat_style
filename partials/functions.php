@@ -1,5 +1,7 @@
 <?php
-//functions
+/////////////
+//FUNCTIONS//
+/////////////
 
 // ssid generator
 function generateRandomString($length){

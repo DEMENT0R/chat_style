@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 		////////////////////
 		$db->query("INSERT INTO ?n SET ?u", $table, $data);
 		//echo 'SEND MESSAGE = '.$_POST;
-		file_get_contents('http://bot.gexar.tk/like_send.php?ssid='.$ssid.'&text='.$text);
+		file_get_contents('partials/like_send.php?ssid='.$ssid.'&text='.$text);
 	}
 	header("Location: http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']);
 	exit;
@@ -38,6 +38,8 @@ if ($_GET['get_message'] > 0 ) {
 		//$row = $db->getRow("SELECT * FROM ?n WHERE ssid=?i ORDER BY updated DESC LIMIT 0, $mess_quantity", $table, $_COOKIE['ssid']);
 		$LIST = $db->getAll("SELECT * FROM ?n WHERE ssid=?s ORDER BY updated DESC LIMIT 0, $mess_quantity", $table, $_COOKIE['ssid']);
 		$LIST = array_reverse($LIST);
+		echo "<div class='container text-center'><h1></h1><h1></h1>";
+		//echo "<p>ssid = ".$_COOKIE['ssid']."</p>";
 		foreach ($LIST as $row) {
 			$username = $row['name'];
 			$text = $row['text'];
@@ -48,6 +50,7 @@ if ($_GET['get_message'] > 0 ) {
 			//$debug_msg = 'Пользователь <b>'.$username.'</b> найден! ('.$last_time.')<br>';
 			echo "<b>".$username."</b>: ".$text."<br>";
 		}
+		echo "</div>";
 	} else {
 		echo "<b>Tomoru:</b> Т.к. сообщений ещё нет, выводим... Привет, друг!";
 	}

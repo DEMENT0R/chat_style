@@ -1,6 +1,11 @@
 <?php
 //PHP counter starts:
 $_start_time = microtime(true);
+
+// Functions
+include 'partials/functions.php';
+// Auth
+include 'partials/auth.php';
 ?>
 <!doctype html>
 <html>
@@ -16,7 +21,7 @@ $_start_time = microtime(true);
     //
   }
   ?>
-  <div class="main-window">
+  <div id="main-window">
     <!-- Debug -->
     <?php
     if ($_GET['debug'] == 1) {
@@ -31,10 +36,10 @@ $_start_time = microtime(true);
   <!-- Modals start -->
   <?php include 'partials/modals.php'; ?>
   <!-- Modals end -->
+  <!-- Chat script -->
+  <script src="js/chat.js"></script>
 </body>
 </html>
-<!-- Functions -->
-<?php include 'partials/functions.php'; ?>
 
 <?php
 //PHP counter ends:

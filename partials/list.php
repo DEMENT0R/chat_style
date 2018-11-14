@@ -5,7 +5,7 @@
     <div class="btn-group" role="group" aria-label="...">
         <a href="../" class="btn btn-default">Главная</a>
         <a href="?id=0" class="btn btn-default">Добавить</a>
-        <a href="../" onclick="javascript:void(document.cookie = 'ssid=; expires=Thu, 01 Jan 1970 00:00:01 GMT;')" class="btn btn-default">Лог аут</a>
+        <a href="../" onclick="javascript:void(document.cookie = 'ssid=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;')" class="btn btn-default">Лог аут</a>
     </div>
     <hr>
     <table class="table">
@@ -35,7 +35,7 @@
                 <form method="POST">
                     <input type="hidden" name="delete" value="<?=e($row['id'])?>">
                     <div class="btn-group" role="group" aria-label="...">
-                    <a href="/" onclick="javascript:void(document.cookie = 'ssid=<?=e($row['ssid'])?>')" class="btn btn-success">Войти</a>
+                    <a href="../" onclick="javascript:void(document.cookie = 'ssid=<?=e($row['ssid'])?>')" class="btn btn-success">Войти</a>
                     <a href="?id=<?=e($row['id'])?>" class="btn btn-warning">Правка</a>
                     <input type="submit" value="Удалить!" class="btn btn-danger">
                     </div>
