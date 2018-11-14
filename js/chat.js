@@ -12,10 +12,10 @@ setInterval(function(){
 $('#send-message').click(function(){
   sendMessage();
 
-  $('#chat-input-field').val('');
+  $('#message-input').val('');
 });
 //при нажатии enter
-$("#chat-input-field").keyup(function(event){
+$("#message-input").keyup(function(event){
   if(event.keyCode == 13){
     sendMessage();
   }
@@ -50,7 +50,7 @@ function get_cookie ( cookie_name )
 
 //send message
 function sendMessage(){
-  if ($('#chat-input-field').val() != '') {
+  if ($('#message-input').val() != '') {
     ///////////////////
     //default sending//
     ///////////////////
@@ -61,7 +61,7 @@ function sendMessage(){
         id: 0,
         ssid: get_cookie ( "ssid" ),
         name: get_cookie ( "user_name" ),
-        text: $('#chat-input-field').val()
+        text: $('#message-input').val()
     },
       //debug
       //onAjaxSuccess
@@ -73,14 +73,14 @@ function sendMessage(){
       "like_send.php",
       {
         ssid: get_cookie ( "ssid" ),
-        text: $('#chat-input-field').val()
+        text: $('#message-input').val()
     },
       //debug
       //onAjaxSuccess
     );
 
-    $('#chat-input-field').val('');
+    $('#message-input').val('');
   } else {
-    $('#chat-input-field').attr("placeholder", "Введите сообщение для бота!");
+    $('#message-input').attr("placeholder", "Введите сообщение для бота!");
   }
 }
