@@ -28,7 +28,7 @@ $("#chat-input-field").keyup(function(event){
 //update function
 function UpdateMessages(){
   $('#chat-history').load('app.php?get_message=3');
-  $.post("stupid_bot.php");
+  //$.post("stupid_bot.php");
 }
 
 //AJAX POST DEBUG
