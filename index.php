@@ -7,10 +7,10 @@ $_start_time = microtime(true);
 <head>
   <title>Chat</title>
   <meta charset="utf-8">
+  <!-- Bootstrap — Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- Main Style -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Bootstrap — Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- JQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- fullscreen starts -->
@@ -34,25 +34,22 @@ $_start_time = microtime(true);
   <!-- Fullscreen ends -->
 </head>
 <body>
-  <p></p>
-  <div class="btn-group center-block" role="group" aria-label="...">
-    <a href="crud.php" class="btn btn-default">База</a>
-    <a href="crud.php?id=0" class="btn btn-default">Юзер</a>
-    <a href="calc.html" class="btn btn-default">Calc</a>
-    <a href="#" class="btn btn-default" onClick="fullscreen3(document.documentElement);return false;">Экран</a>
+  <div class="btn-group container d-block mx-auto" role="group" aria-label="Menu">
+    <a href="crud.php" type="button" class="btn btn-default">База</a>
+    <a href="crud.php?id=0" type="button" class="btn btn-default">Юзер</a>
+    <a href="calc.html" type="button" class="btn btn-default">Calc</a>
+    <a href="#" type="button" class="btn btn-default" onClick="fullscreen3(document.documentElement);return false;">Экран</a>
   </div>
-  <p>...</p>
-  <p class="test-block" id="w0">w0</p>
-  <p class="test-block" id="w480">min-width: 480px</p>
-  <p class="test-block" id="w768">min-width: 768px</p>
-  <p class="test-block" id="w992">min-width: 992px</p>
-  <p class="test-block" id="w1382">min-width: 1382px</p>
+  <p class="test-block" id="w0"><b>Debug</b></p>
+  <p class="test-block" id="w480"> | min-width: 480px</p>
+  <p class="test-block" id="w768"> | min-width: 768px</p>
+  <p class="test-block" id="w992"> | min-width: 992px</p>
+  <p class="test-block" id="w1382"> | min-width: 1382px</p>
   <!-- Блок сообщений -->
   <ul id="messages">
     <li>Message #1</li>
     <li>Message #2</li>
-    <li>Message #3</li>
-    <li><img src="https://media.giphy.com/media/uQCryQVULWVvW/source.gif" id="autoimage" class="center-block"></li>
+    <li><img src="https://media.giphy.com/media/uQCryQVULWVvW/source.gif" id="autoimage" class="d-block mx-auto"></li>
   </ul>
   <div id="chat-block">
     <!-- Поле ввода текста -->
