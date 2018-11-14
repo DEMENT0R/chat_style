@@ -10,8 +10,6 @@
       <div class="modal-body">
         Здесь будет простой мануал, подсказывающий, как взаимодействовать.<br>
         <img src="https://media.giphy.com/media/uQCryQVULWVvW/source.gif" id="autoimage" class="d-block mx-auto">
-        <h5>Popover in a modal</h5>
-        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
       </div>
       <div class="modal-footer">
         <a type="button" class="btn btn-default mx-auto" data-dismiss="modal">Спаcибо!</a>
