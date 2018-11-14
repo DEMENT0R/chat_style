@@ -53,7 +53,7 @@ $_start_time = microtime(true);
   </ul>
   <div id="chat-block">
     <!-- Поле ввода текста -->
-    <input autocomplete="off" placeholder="Наберите текст"/>
+    <input autocomplete="off" placeholder="Наберите текст" style="text-align: center; outline:none;"/>
     <!-- Кнопка отправки сообщения -->
     <button class="bnt btn-info">Send</button>
   </div>
