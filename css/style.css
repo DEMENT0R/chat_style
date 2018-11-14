@@ -3,40 +3,33 @@
 /* Здесь базовые стили для старых браузеров. */
 
 * {
+  /*
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box;*/
+  box-sizing: border-box;
+  */
   font: 6vw Calibri, Arial;
 }
+/*
 body {
   padding: 1vw;
 }
-div {
-  background: #eee;
-  padding: 1vw;
-  position: fixed;
-  bottom: 0vw;
-  left: 0vw;
-  width: 100vw;
+*/
+.test-block {
+  display: none;
 }
-div input {
+#message-input {
   border: none;
   padding: 1vw;
   width: 77%;
   margin-right: .5%;
+  text-align: center;
+  outline:none;
 }
-div button {
-  /*
-  border: none;
-  background: #08f;
-  color: #fff;
-  */
+#message-send {
   float: right;
   width: 19%;
   padding: 1vw;
-}
-.test-block {
-  display: none;
 }
 #messages {
   list-style-type: none;
@@ -52,10 +45,18 @@ div button {
 #autoimage {
   width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: 470px;
 }
 #w0 {
   display: inline;
+}
+#chat-block {
+  background: #eee;
+  padding: 1vw;
+  position: fixed;
+  bottom: 0vw;
+  left: 0vw;
+  width: 100vw;
 }
 
 @media only screen and (min-width: 480px) {
@@ -83,7 +84,7 @@ div button {
   * {
     font: 2vw Calibri, Arial;
   }
-  div {
+  #chat-block {
     background: none;
     padding: 1vw;
     position: fixed;
@@ -91,7 +92,7 @@ div button {
     left: 20vw;
     width: 60vw;
   }
-  div input {
+  #message-input {
     padding: 1vw;
     width: 77%;
     margin-right: .5%;
