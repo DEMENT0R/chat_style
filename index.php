@@ -1,3 +1,8 @@
+<?php
+//PHP counter starts:
+$_start_time = microtime(true);
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -50,3 +55,8 @@
   </div>
 </body>
 </html>
+
+<?php
+//PHP counter ends:
+echo '<!-- ЧАТ: Сгенерировано за '.round((microtime(true) - $_start_time), 5).' сек. -->';
+?>
