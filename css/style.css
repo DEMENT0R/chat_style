@@ -11,7 +11,7 @@
   font: 2vh Calibri, Arial;
 }
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
   background: linear-gradient(#fff 90%, #ddd 95%);
