@@ -98,8 +98,9 @@ h1 {
     padding: 1vw;
     width: 77%;
     margin-right: .5%;
-    border-bottom: 1px solid;
+    border: none;
     border-radius: 0;
+    border-bottom: 1px solid;
   }
   #message-send {
     border-radius: 2vw;
