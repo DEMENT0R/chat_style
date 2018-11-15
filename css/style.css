@@ -22,6 +22,10 @@ h1 {
 .test-block {
   display: none;
 }
+.container {
+  min-width: 80vw;
+  max-width: 90vw;
+}
 #message-input {
   border-radius: 3vw;
   padding: 1vw;
