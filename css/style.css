@@ -77,7 +77,7 @@ h1 {
 @media only screen and (min-width: 768px) {
   /* Планшеты в режиме portrait. */
   * {
-    font: 3vh Calibri, Arial;
+    font: 2vh Calibri, Arial;
   }
   #w768 {
     display: inline;
