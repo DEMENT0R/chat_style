@@ -10,6 +10,12 @@
   */
   font: 6vw Calibri, Arial;
 }
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(#fff 70%, #aaa 90%);
+}
 h1 {
   padding-top: 10vh;
 }
@@ -82,6 +88,9 @@ h1 {
   /* Планшеты в режиме landscape, нетбуки, ноутбуки, десктоп. */
   * {
     font: 2vw Calibri, Arial;
+  }
+  body {
+    background: none;
   }
   h1 {
     padding-top: 15vh;
