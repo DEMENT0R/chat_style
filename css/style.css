@@ -25,6 +25,7 @@ h1 {
   outline:none;
 }
 #message-send {
+  border-radius: 1vw;
   float: right;
   width: 19%;
   padding: 1vw;
@@ -98,6 +99,9 @@ h1 {
     width: 77%;
     margin-right: .5%;
     border-bottom: 1px solid;
+  }
+  #message-input {
+    border-radius: 2vw;
   }
   #w992 {
     display: inline;
