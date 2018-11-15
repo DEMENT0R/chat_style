@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   */
-  font: 3vh Calibri, Arial;
+  font: 2vh Calibri, Arial;
 }
 body {
   height: 100vh;
@@ -67,7 +67,7 @@ h1 {
 @media only screen and (min-width: 480px) {
   /* Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. */
   * {
-    font: 3vh Calibri, Arial;
+    font: 2vh Calibri, Arial;
   }
   #w480 {
     display: inline;
