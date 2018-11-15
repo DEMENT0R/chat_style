@@ -17,7 +17,7 @@ h1 {
   display: none;
 }
 #message-input {
-  border: none;
+  border-radius: 3vw;
   padding: 1vw;
   width: 77%;
   margin-right: .5%;
@@ -25,7 +25,7 @@ h1 {
   outline:none;
 }
 #message-send {
-  border-radius: 1vw;
+  border-radius: 3vw;
   float: right;
   width: 19%;
   padding: 1vw;
@@ -99,8 +99,9 @@ h1 {
     width: 77%;
     margin-right: .5%;
     border-bottom: 1px solid;
+    border-radius: 0;
   }
-  #message-input {
+  #message-send {
     border-radius: 2vw;
   }
   #w992 {
