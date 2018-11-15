@@ -1,5 +1,6 @@
 <title>TOMORU — Умный бот, который может звонить, вести переписку, обучать и продавать.</title>
 <meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, user-scalable=0"/>
 <!-- Main Style -->
 <link rel="stylesheet" href="css/style.css">
 <!-- Bootstrap — Latest compiled and minified CSS -->
