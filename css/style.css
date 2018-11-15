@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   */
-  font: 6vw Calibri, Arial;
+  font: 3vh Calibri, Arial;
 }
 body {
   height: 100vh;
@@ -67,7 +67,7 @@ h1 {
 @media only screen and (min-width: 480px) {
   /* Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. */
   * {
-    font: 5vw Calibri, Arial;
+    font: 3vh Calibri, Arial;
   }
   #w480 {
     display: inline;
@@ -77,7 +77,7 @@ h1 {
 @media only screen and (min-width: 768px) {
   /* Планшеты в режиме portrait. */
   * {
-    font: 4vw Calibri, Arial;
+    font: 3vh Calibri, Arial;
   }
   #w768 {
     display: inline;
@@ -87,7 +87,7 @@ h1 {
 @media only screen and (min-width: 992px) {
   /* Планшеты в режиме landscape, нетбуки, ноутбуки, десктоп. */
   * {
-    font: 2vw Calibri, Arial;
+    font: 3vh Calibri, Arial;
   }
   body {
     background: none;
@@ -122,7 +122,7 @@ h1 {
 @media only screen and (min-width: 1382px) {
   /* Десктоп с большими разрешениями, телевизоры. */
   * {
-    font: 1.8vw Calibri, Arial;
+    font: 3vh Calibri, Arial;
   }
   h1 {
     padding-top: 20vh;
