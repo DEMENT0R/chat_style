@@ -67,7 +67,7 @@ h1 {
 @media only screen and (min-width: 480px) {
   /* Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. */
   * {
-    font: 2vh Calibri, Arial;
+    font: 2.2vh Calibri, Arial;
   }
   #w480 {
     display: inline;
@@ -77,7 +77,7 @@ h1 {
 @media only screen and (min-width: 768px) {
   /* Планшеты в режиме portrait. */
   * {
-    font: 2vh Calibri, Arial;
+    font: 2.5vh Calibri, Arial;
   }
   #w768 {
     display: inline;
