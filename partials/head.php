@@ -1,11 +1,10 @@
 <title>TOMORU — Умный бот, который может звонить, вести переписку, обучать и продавать.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no, user-scalable=0"/>
-<!-- Main Style -->
-<link rel="stylesheet" href="css/style.css">
 <!-- Bootstrap — Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+<!-- Main Style -->
+<link rel="stylesheet" href="css/style.css">
 <!-- JQuery -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- Popper.js -->
