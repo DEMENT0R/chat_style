@@ -48,7 +48,7 @@ if ($_GET['get_message'] > 0 ) {
 			}
 			$last_time = $row['updated'];
 			//$debug_msg = 'Пользователь <b>'.$username.'</b> найден! ('.$last_time.')<br>';
-			echo "<p class='revealator-slideup revealator-duration20'><b>".$username."</b>: ".$text."</p>";
+			echo "<p class='revealator-slideup revealator-duration20 revealator-once'><b>".$username."</b>: ".$text."</p>";
 		}
 		echo "</div>";
 		echo '<script>Revealator.refresh();</script>';
