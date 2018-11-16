@@ -38,7 +38,7 @@ if ($_GET['get_message'] > 0 ) {
 		//$row = $db->getRow("SELECT * FROM ?n WHERE ssid=?i ORDER BY updated DESC LIMIT 0, $mess_quantity", $table, $_COOKIE['ssid']);
 		$LIST = $db->getAll("SELECT * FROM ?n WHERE ssid=?s ORDER BY updated DESC LIMIT 0, $mess_quantity", $table, $_COOKIE['ssid']);
 		$LIST = array_reverse($LIST);
-		echo "<div class='container text-center'>";
+		echo "<div class='container text-center' style='padding-top: 30vh;'>";
 		//echo "<p>ssid = ".$_COOKIE['ssid']."</p>";
 		foreach ($LIST as $row) {
 			$username = $row['name'];
@@ -48,9 +48,10 @@ if ($_GET['get_message'] > 0 ) {
 			}
 			$last_time = $row['updated'];
 			//$debug_msg = 'Пользователь <b>'.$username.'</b> найден! ('.$last_time.')<br>';
-			echo "<p><b>".$username."</b>: ".$text."</p>";
+			echo "<p class='revealator-slideup revealator-duration20'><b>".$username."</b>: ".$text."</p>";
 		}
 		echo "</div>";
+		echo '<script>Revealator.refresh();</script>';
 	} else {
 		echo "<b>Tomoru:</b> Т.к. сообщений ещё нет, выводим... Привет, друг!";
 	}
@@ -59,5 +60,5 @@ if ($_GET['get_message'] > 0 ) {
 ?>
 <?php
 //PHP counter ends:
-echo '<!-- ЧАТ: Сгенерировано за '.round((microtime(true) - $_start_time), 5).' сек. -->';
+//echo '<!-- ЧАТ: Сгенерировано за '.round((microtime(true) - $_start_time), 5).' сек. -->';
 ?>

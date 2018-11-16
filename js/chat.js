@@ -1,4 +1,4 @@
-$script_update_time = 3000;
+$script_update_time = 1000;
 $script_update_needed = false;
 
 //first messages loading
@@ -30,7 +30,10 @@ $("#message-input").keyup(function(event){
 
 //update function
 function UpdateMessages(){
-  $('#main-window').load('partials/app.php?get_message=3');
+  $('#cache-window').load('partials/app.php?get_message=1');
+  if ($('#cache-window').html() !== $('#main-window').html()){
+    $('#main-window').load('partials/app.php?get_message=1');
+  }
   //$.post("stupid_bot.php");
 }
 
