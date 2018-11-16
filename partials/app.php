@@ -38,7 +38,7 @@ if ($_GET['get_message'] > 0 ) {
 		//$row = $db->getRow("SELECT * FROM ?n WHERE ssid=?i ORDER BY updated DESC LIMIT 0, $mess_quantity", $table, $_COOKIE['ssid']);
 		$LIST = $db->getAll("SELECT * FROM ?n WHERE ssid=?s ORDER BY updated DESC LIMIT 0, $mess_quantity", $table, $_COOKIE['ssid']);
 		$LIST = array_reverse($LIST);
-		echo "<div class='container text-center'><h1></h1><h1></h1>";
+		echo "<div class='container text-center'>";
 		//echo "<p>ssid = ".$_COOKIE['ssid']."</p>";
 		foreach ($LIST as $row) {
 			$username = $row['name'];
@@ -48,7 +48,7 @@ if ($_GET['get_message'] > 0 ) {
 			}
 			$last_time = $row['updated'];
 			//$debug_msg = 'Пользователь <b>'.$username.'</b> найден! ('.$last_time.')<br>';
-			echo "<b>".$username."</b>: ".$text."<br>";
+			echo "<p><b>".$username."</b>: ".$text."</p>";
 		}
 		echo "</div>";
 	} else {

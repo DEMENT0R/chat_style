@@ -1,4 +1,4 @@
-$script_update_time = 1000;
+$script_update_time = 3000;
 $script_update_needed = false;
 
 //first messages loading
