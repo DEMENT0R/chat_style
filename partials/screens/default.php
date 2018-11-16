@@ -1,7 +1,7 @@
 <div class="container">
   <div class="container position-absolute text-right revealator-slidedown revealator-duration10" style="z-index: 1;"><a class="nav-link" href="#" data-toggle="modal" data-target="#helpModal">Как общаться с ботом?</a></div>
   <div class="container text-center">
-    <h1 class="revealator-zoomout revealator-duration10">TOMORU</h1>
+    <h1 class="revealator-zoomout revealator-duration10 revealator-once">TOMORU</h1>
     <h4 class="revealator-slideleft revealator-delay2 revealator-duration10">Умный бот, который может звонить, вести переписку, обучать и продавать</h4>
   </div>
   <p class="revealator-slideright revealator-delay4 revealator-duration10">
