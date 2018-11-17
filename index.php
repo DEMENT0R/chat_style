@@ -32,7 +32,7 @@ include 'partials/auth.php';
       }
       ?>
     </div>
-    <div id="cache-window""></div>
+    <div id="cache-window"></div>
     <!-- Input block -->
     <?php include 'partials/input-block.php'; ?>
     <!-- Modals start -->
