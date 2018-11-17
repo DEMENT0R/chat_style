@@ -1,5 +1,9 @@
 $script_update_time = 1000;
 $script_update_needed = false;
+need_hide = true;
+
+//adding classes to main window
+$("#main-window").addClass("revealator-slideup revealator-once");
 
 //first messages loading
 //UpdateMessages();
@@ -37,13 +41,13 @@ function UpdateMessages(){
   //$.post("stupid_bot.php");
 }
 
-//AJAX POST DEBUG
+//AJAX POST DEBUG function
 function onAjaxSuccess(data)
 {
-  alert(data);
+  //alert(data);
 }
 
-//get cookie
+//get cookie function
 function get_cookie ( cookie_name )
 {
   var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
@@ -54,9 +58,10 @@ function get_cookie ( cookie_name )
   return null;
 }
 
-//send message
+//send message function
 function sendMessage(){
   if ($('#message-input').val() != '') {
+
     ///////////////////
     //default sending//
     ///////////////////
@@ -70,8 +75,10 @@ function sendMessage(){
         text: $('#message-input').val()
       },
       //debug
-      //onAjaxSuccess
+      onAjaxSuccess
     );
+
+
     //////////////////////////
     //sending to NEUROBOT!!!//
     //////////////////////////
@@ -82,12 +89,25 @@ function sendMessage(){
         text: $('#message-input').val()
       },
       //debug
-      //onAjaxSuccess
+      onAjaxSuccess
     );
+
+    hideMainWindow();
 
     $('#message-input').val('');
     $script_update_needed = true;
   } else {
     $('#message-input').attr("placeholder", "Введите сообщение для бота!");
+  }
+}
+
+//hide main window function
+function hideMainWindow() {
+  if (need_hide == true){
+    //revealator
+    $("#main-window").removeClass("revealator-within");
+    $("#main-window").addClass("revealator-below");
+
+    need_hide = false;
   }
 }

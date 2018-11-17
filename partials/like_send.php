@@ -1,6 +1,6 @@
 <?php
 
-sleep(1);
+sleep(2);
 
 //SafeMysql
 include '../classes/safemysql.class.php';

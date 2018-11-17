@@ -30,7 +30,7 @@ h1 {
 }
 #message-input {
   border-radius: 3vw;
-  margin: 1vw;
+  padding: 1vw;
   width: 77%;
   margin-right: .5%;
   text-align: center;
