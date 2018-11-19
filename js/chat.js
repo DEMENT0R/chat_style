@@ -1,18 +1,18 @@
-$script_update_time = 1000;
-$script_update_needed = false;
-need_hide = true;
+var script_update_time = 1000;
+var script_update_needed = false;
+var need_hide = true;
 
 //adding classes to main window
-$("#main-window").addClass("revealator-slideup revealator-once");
+//$("#main-window").addClass("revealator-slideup revealator-position-within revealator-once");
 
 //first messages loading
 //UpdateMessages();
 //autoupdate
 setInterval(function(){
-  if ($script_update_needed) {
+  if (script_update_needed) {
     UpdateMessages();
   }
-}, $script_update_time);
+}, script_update_time);
 
 //отправка сообщения
 //при нажатии кнопки
@@ -37,6 +37,10 @@ function UpdateMessages(){
   $('#cache-window').load('partials/app.php?get_message=1');
   if ($('#cache-window').html() !== $('#main-window').html()){
     $('#main-window').load('partials/app.php?get_message=1');
+    script_update_needed = false;
+    setTimeout(function(){
+      script_update_needed = true;
+    }, 2000);
   }
   //$.post("stupid_bot.php");
 }
@@ -95,7 +99,9 @@ function sendMessage(){
     hideMainWindow();
 
     $('#message-input').val('');
-    $script_update_needed = true;
+    setTimeout(function(){
+      script_update_needed = true;
+    }, 1000);
   } else {
     $('#message-input').attr("placeholder", "Введите сообщение для бота!");
   }
@@ -105,9 +111,13 @@ function sendMessage(){
 function hideMainWindow() {
   if (need_hide == true){
     //revealator
+    $("#main-window").removeClass("revealator-position-within");
     $("#main-window").removeClass("revealator-within");
-    $("#main-window").addClass("revealator-below");
-
+    $("#main-window").addClass("revealator-position-partially-below");
+    setTimeout(function(){
+      $('#main-window').html('');
+      $('#cache-window').html('');
+    }, 1000);
     need_hide = false;
   }
 }
