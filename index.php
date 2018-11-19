@@ -35,14 +35,16 @@ include 'partials/auth.php';
     <div id="cache-window"></div>
     <!-- Input block -->
     <?php include 'partials/input-block.php'; ?>
-    <!-- Modals start -->
-    <?php include 'partials/modals.php'; ?>
-    <!-- Modals end -->
     <!-- Chat script -->
   </div>
   <script src="js/chat.js"></script>
   <script src="js/fm.revealator.jquery.min.js"></script>
+
+      <!-- Modals start -->
+    <?php include 'partials/modals.php'; ?>
+    <!-- Modals end -->
 </body>
+
 </html>
 
 <?php

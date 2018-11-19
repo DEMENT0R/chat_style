@@ -76,6 +76,7 @@ if ($err) {
   //$text_to_db = $arr[1][rand (0, 2)];
   echo $text."<br>";
   echo $text_to_db;
+  include 'parser.php';
   $query = "INSERT INTO ".$table." SET name='Сашин Бот', ssid='".$ssid."', text='".$text_to_db."'";
   //echo $query;
   $db->query($query);
