@@ -22,7 +22,7 @@ include 'partials/auth.php';
     //
     }
     ?>
-    <div id="main-window">
+    <div class="revealator-slideup revealator-within revealator-once" id="main-window">
       <!-- Debug -->
       <?php
       if ($_GET['debug'] == 1) {
