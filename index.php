@@ -13,7 +13,7 @@ include 'partials/auth.php';
   <?php include 'partials/head.php'; ?>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container-fluid">
     <!-- Nav -->
     <?php
     if ($_GET['admin'] == 1) {
